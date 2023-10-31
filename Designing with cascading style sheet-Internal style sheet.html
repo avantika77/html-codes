@@ -3,26 +3,50 @@
 <head>
     <title>Internal Style Sheet Example</title>
     <style>
-        /* CSS styles */
+        /* CSS styles go here */
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
-            background-color: blanchedalmond;
+            text-align: center;
+        }
+
+        .container {
+            display: flex; /* Use Flexbox for column layout */
+        }
+
+        .column {
+            flex: 1; /* Each column takes up an equal amount of space */
+            padding: 20px;
+        }
+
+        .box {
+            background-color: #eee;
+            border: 10px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            height: auto;
         }
 
         h1 {
             color: #333;
-            text-align: center;
         }
 
         p {
             font-size: 16px;
-            text-align: center;
         }
     </style>
 </head>
 <body>
-    <h1>HTML CODES </h1>
-    <p>This is a sample paragraph with some text.</p>
+    <h1>Welcome to My Website</h1>
+    <div class="container">
+        <div class="column">
+            <p>This is the content of the left column.</p>
+        </div>
+        <div class="column">
+            <p>This is the content of the right column.</p>
+        </div>
+    </div>
+    <div class="box">Box 1 in the middle</div>
+    <div class="box">Box 2 in the middle</div>
 </body>
 </html>
