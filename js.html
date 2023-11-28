@@ -1,0 +1,21 @@
+<html>
+<head><script>
+    function writeMessage()
+    {
+        document.forms[0].mySecondInput.value=document.forms[0].myInput.value;
+    
+    }
+</script>
+</head>
+<body bgcolor="pink">
+    <p> The on key down occur when the a keyborad key is on it's way down.</p>
+    <form>
+Enter your name:
+<input type="text" name="myInput" onKeypress="writeMessage();" size="20">
+<input type="text" name="mySecondInput" size="20">
+
+    </select> </form>
+
+    
+</body>
+</html>
